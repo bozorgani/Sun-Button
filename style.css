@@ -1,0 +1,55 @@
+body{
+    background: 
+    linear-gradient(180deg,#1c0138 0%,#2c0055 100%);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container , .button , .sun , .button span{
+    position: absolute;
+}
+.container{
+    width: 200px;
+    height: 200px;
+}
+.container .sun{
+    width: 64px;
+    height: 64px;
+    left: 70px;
+    bottom: 136px;
+    background: linear-gradient(180deg, #ffdc2a 0%, #fb2182 41.54%);
+    box-shadow: 0 0 36px #ffdc2a;
+    z-index: 2;
+    border-radius: 65px;
+    transition: all 1s ease-in-out;
+}
+.container a:hover .sun{
+    bottom: 176px;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 10px #ffdc2a;
+}
+.container .button{
+    width: 200px;
+    height: 65px;
+    background: #2c0055;
+    box-shadow: 0 0 16px #c80de0;
+    border-radius: 10px;
+    z-index: 3;
+    transition: all 1s ease-in-out;
+}
+.container a:hover .button{
+    box-shadow: 0 0 36px #c80de0;
+    transition: all 1s ease-in-out;
+}
+.container .button span{
+    text-align: center;
+    font-family: cursive;
+    font-size: 35px;
+    left: 65px;
+    line-height: 55px;
+    margin: 0 auto;
+    transition: all 1s ease-in-out;
+    color: #ffdc2a;
+}
